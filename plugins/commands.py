@@ -243,22 +243,15 @@ async def start(client, message):
                                 InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
                                 InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                             ],[
-                                InlineKeyboardButton('𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥', url="https://t.me/KingVJ01")
-                            ]‚[
-                                InlineKeyboardButton('𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥', url="https://t.me/KingVJ01")
+                                InlineKeyboardButton('𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥', url="https://t.me/Im_professor_22")
                             ],[
                                 InlineKeyboardButton("🚀 Fast Download 🚀", url=download),  # we download Link
                                 InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream) #Don't change anything without contacting me @KingVJ01
                             ]
                         ]
                     )
-                )
-                            
-                            
-                        
-                 
-                
-         filesarr.append(msg)
+                )                  
+                filesarr.append(msg)
                 
             except FloodWait as e:
                 await asyncio.sleep(e.x)
@@ -275,18 +268,12 @@ async def start(client, message):
                           InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                        ],[
                           InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url="t.me/KingVJ01")
-                        ]‚[
-                                InlineKeyboardButton('𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥', url="https://t.me/KingVJ01")
-                            ],[
-                                InlineKeyboardButton("🚀 Fast Download 🚀", url=download),  # we download Link
-                                InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream) #Don't change anything without contacting me @KingVJ01
+                         ],[ 
+                            InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @KingVJ01
                             ]
                         ]
                     )
-                )
-                        
-                    
-                
+                )    
                 filesarr.append(msg)
                 k = await client.send_message(chat_id = message.from_user.id, text=f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie Files/Videos will be deleted in <b><u>10 mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this ALL Files/Videos to your Saved Messages and Start Download there</i></b>")
                 await asyncio.sleep(600)
@@ -454,13 +441,14 @@ async def start(client, message):
                       InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                    ],[
                       InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url="https://t.me/Im_professor_22")
-                     ]
-            
+                     ],
+                     [
+                        InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @KingVJ01
 
-                     
-                    
-                
-            
+                     ]
+                    ]
+                )
+            )
             filesarr.append(msg)
         k = await client.send_message(chat_id = message.from_user.id, text=f"<b><u>❗️❗️❗️IMPORTANT❗️️❗️❗️</u></b>\n\nThis Movie Files/Videos will be deleted in <b><u>10 mins</u> 🫥 <i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this ALL Files/Videos to your Saved Messages and Start Download there</i></b>")
         await asyncio.sleep(600)
@@ -520,10 +508,13 @@ async def start(client, message):
                       InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                    ],[
                       InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url="https://t.me/Im_professor_22")
+                     ],
+                     [
+                        InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @KingVJ01
                      ]
-                    
-                
-            
+                    ]
+                )
+            )
             filetype = msg.media
             file = getattr(msg, filetype.value)
             title = '@movies_hub49  ' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), file.file_name.split()))
@@ -543,21 +534,13 @@ async def start(client, message):
                       InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                    ],[
                       InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url="t.me/KingVJ01")
-                     ]‚[
-                                InlineKeyboardButton('𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥', url="https://t.me/KingVJ01")
-                            ],[
-                                InlineKeyboardButton("🚀 Fast Download 🚀", url=download),  # we download Link
-                                InlineKeyboardButton('🖥️ Watch online 🖥️', url=stream) #Don't change anything without contacting me @KingVJ01
-                            ]
-                        ]
-                    )
+                     ],
+                     [
+                        InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @KingVJ01
+                     ]
+                    ]
+                )
             )
-                     
-    
-                     
-                    
-                
-            
             btn = [[
                 InlineKeyboardButton("Get File Again", callback_data=f'delfile#{file_id}')
             ]]
@@ -604,12 +587,13 @@ async def start(client, message):
               InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
            ],[
               InlineKeyboardButton("𝗕𝗢𝗧 𝗢𝗪𝗡𝗘𝗥", url="https://t.me/Im_professor_22")
+             ],
+             [
+              InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @KingVJ01
              ]
-             
-              
-            
-        
-    
+            ]
+        )
+    )     
     btn = [[
         InlineKeyboardButton("Get File Again", callback_data=f'delfile#{file_id}')
     ]]
