@@ -127,9 +127,9 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "https://vj-filter-bot-kvzd.onrender.com/",format(FQDN)
+    URL = "https://mytestvj-998c9929dc7a.herokuapp.com/")
 else:
-    URL = "https://vj-filter-bot-kvzd.onrender.com/",format(FQDN)
+    URL = "https://mytestvj-998c9929dc7a.herokuapp.com/")
 
 
 
